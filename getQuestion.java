@@ -37,7 +37,7 @@ public class getQuestion {
     public static String returnQuestion(int pos) {
 
         setArray();
-        for (int i = 0; i < array.length;i++) {
+        for (int i = 0; i < array.length; i++) {
             if (array.length >=10  && pos <= 0 );
             //System.out.println(array[pos]);
             return array[pos];
