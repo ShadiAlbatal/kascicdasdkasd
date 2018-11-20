@@ -12,10 +12,10 @@ public class getQuestion {
         array[3] = "Que4: What happens when thread's sleep() method is called";
         array[4] = "Que5: Is it necessary that each try block must be followed by a finally block";
         array[5] = "Que6: Which one among these is not a keyword";
-        array[6] = "Que7: Which one among these is not a class ";
-        array[7] = "Que8: which one among these is not a function of Object class";
-        array[8] = "Que9: which function is not present in Applet class";
-        array[9] = "Que10: Which one among these is not a valid component";
+        array[6] = "Que7: What is the default value of Object variable";
+        array[7] = "Que8: What is instance variable";
+        array[8] = "Que9: can be constructor be made final";
+        array[9] = "Que10: What is function overriding";
 
     }
 
