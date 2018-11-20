@@ -1,3 +1,5 @@
+import junit.framework.AssertionFailedError;
+import org.codehaus.groovy.transform.SourceURIASTTransformation;
 import org.junit.Test;
 import junit.framework.TestCase;
 //import org.junit.jupiter.api.Assert;
@@ -28,8 +30,9 @@ public class OnlineTestTest extends TestCase {
 
         test.current = 9;
         test.jb[1].setSelected(true);
-        Assertions.assertTrue(test.check());
+        Assertions.assertFalse(test.check());
         System.out.println(test.check());
+
 
     }
 

@@ -5,30 +5,14 @@ public class GetQuestionTest extends TestCase {
 
 
     public void testreturnQuestion() throws Exception {
-       getQuestion test= new getQuestion();
 
        getQuestion.setArray();
-       Assertions.assertEquals(0,0,getQuestion.returnQuestion(0));
-       System.out.println(getQuestion.returnQuestion(0));
+       Assertions.assertEquals(getQuestion.returnQuestion(0),"Que1: Which one among these is not a datatype");
 
-       getQuestion.setArray();
-       Assertions.assertEquals(1,1,getQuestion.returnQuestion(1));
-       System.out.println(getQuestion.returnQuestion(1));
+        Assertions.assertEquals(getQuestion.returnQuestion(3),"Que4: String class is defined in which package");
 
-       getQuestion.setArray();
-       Assertions.assertEquals(2,2,getQuestion.returnQuestion(2));
-       System.out.println(getQuestion.returnQuestion(2));
+        Assertions.assertNotEquals(getQuestion.returnQuestion(7),"Que10: Which one among these is not a valid component");
 
-       getQuestion.setArray();
-       Assertions.assertEquals(3,3,getQuestion.returnQuestion(3));
-       System.out.println(getQuestion.returnQuestion(3));
-
-       getQuestion.setArray();
-       Assertions.assertEquals(4,4,getQuestion.returnQuestion(4));
-       System.out.println(getQuestion.returnQuestion(4));
     }
-
-
-
 
 }

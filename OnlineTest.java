@@ -105,6 +105,7 @@ class OnlineTest extends JFrame implements ActionListener
 	}
 	void set()
 	{
+		getQuestion.setArray();
 		jb[4].setSelected(true);
 		if(current==0)
 		{
