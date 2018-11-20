@@ -35,6 +35,12 @@ public class OnlineTestTest extends TestCase {
 
 
     }
+    public void testLabelQuestions() throws Exception {
+        OnlineTest test = new OnlineTest("Test of Online Game");
+
+        test.current = 0;
+        System.out.println(test.l.getText());
+    }
 
 }
 
