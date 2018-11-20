@@ -37,10 +37,30 @@ public class OnlineTestTest extends TestCase {
     }
     public void testLabelQuestions() throws Exception {
         OnlineTest test = new OnlineTest("Test of Online Game");
+        String assertionError = null;
 
         test.current = 0;
-        System.out.println(test.l.getText());
+        test.set();
+        Assertions.assertEquals(test.l.getText(), getQuestion.returnQuestion(test.current));
+        test.current = 3;
+        test.set();
+        Assertions.assertEquals(test.l.getText(), getQuestion.returnQuestion(3));
+        test.current = 6;
+        test.set();
+        Assertions.assertEquals(test.l.getText(), getQuestion.returnQuestion(test.current));
+        test.current = 8;
+        test.set();
+
+        try {
+                Assertions.assertEquals(test.l.getText(), getQuestion.returnQuestion(9));
+
+            } catch (AssertionError e) {
+                assertionError = e.toString();
+                System.out.println(assertionError);
+            }
+
+        }
     }
 
-}
+
 
