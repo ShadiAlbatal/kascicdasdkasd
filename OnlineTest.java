@@ -38,8 +38,8 @@ class OnlineTest extends JFrame implements ActionListener
 		add(b1);add(b2);
 		set();
 		l.setBounds(30,40,450,20);
-		jb[0].setBounds(50,80,100,20);
-		jb[1].setBounds(50,110,100,20);
+		jb[0].setBounds(50,80,150,20);
+		jb[1].setBounds(50,110,150,20);
 		jb[2].setBounds(50,140,100,20);
 		jb[3].setBounds(50,170,100,20);
 		b1.setBounds(100,240,100,30);
@@ -179,9 +179,9 @@ class OnlineTest extends JFrame implements ActionListener
 		if(current==2)
 			return(jb[3].isSelected());
 		if(current==3)
-			return(jb[0].isSelected());
+			return(jb[1].isSelected());
 		if(current==4)
-			return(jb[2].isSelected());
+			return(jb[1].isSelected());
 		if(current==5)
 			return(jb[2].isSelected());
 		if(current==6)
