@@ -103,7 +103,7 @@ class OnlineTest extends JFrame implements ActionListener
 			System.exit(0);
 		}
 	}
-	void set()
+	public void set()
 	{
 		getQuestion.setArray();
 		jb[4].setSelected(true);
@@ -122,6 +122,7 @@ class OnlineTest extends JFrame implements ActionListener
 			l.setText(getQuestion.returnQuestion(current));
 			jb[0].setText("swing");jb[1].setText("applet");jb[2].setText("net");jb[3].setText("lang");
 		}
+
 		if(current==3)
 		{
 			l.setText(getQuestion.returnQuestion(current));
