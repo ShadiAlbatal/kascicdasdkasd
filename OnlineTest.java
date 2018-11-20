@@ -120,22 +120,29 @@ class OnlineTest extends JFrame implements ActionListener
 		if(current==2)
 		{
 			l.setText(getQuestion.returnQuestion(current));
-			jb[0].setText("swing");jb[1].setText("applet");jb[2].setText("net");jb[3].setText("lang");
+			jb[0].setText("wait()");jb[1].setText("start()");jb[2].setText("stop()");jb[3].setText("run()");
 		}
 
 		if(current==3)
 		{
 			l.setText(getQuestion.returnQuestion(current));
-			jb[0].setText("lang");jb[1].setText("Swing");jb[2].setText("Applet");jb[3].setText("awt");
+			jb[0].setText("Thread returns to the ready state");
+			jb[1].setText("Thread returns to waiting state");
+			jb[2].setText("Thread starts running");
+			jb[3].setText("None of the above");
 		}
 		if(current==4)
 		{
 			l.setText(getQuestion.returnQuestion(current));
-			jb[0].setText("Utek");jb[1].setText("Aptech");jb[2].setText("SSS IT");jb[3].setText("jtek");
+			jb[0].setText("True");jb[1].setText("False");
+			jb[2].hide();
+			jb[3].hide();
 		}
 		if(current==5)
 		{
 			l.setText(getQuestion.returnQuestion(current));
+			jb[2].show();
+			jb[3].show();
 			jb[0].setText("class");jb[1].setText("int");jb[2].setText("get");jb[3].setText("if");
 		}
 		if(current==6)

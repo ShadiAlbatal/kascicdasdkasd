@@ -3,15 +3,14 @@ import java.util.ArrayList;
 public class getQuestion {
 
     private static String[] array;
-    //private static String[] getarray;
 
     public static void setArray() {
         array = new String[10];
         array[0] = "Que1: Which one among these is not a datatype";
         array[1] = "Que2: Which class is available to all the class automatically";
-        array[2] = "Que3: Which package is directly available to our class without importing it";
-        array[3] = "Que4: String class is defined in which package";
-        array[4] = "Que5: Which institute is best for java coaching";
+        array[2] = "Que3: Which method must be implemented by all threads";
+        array[3] = "Que4: What happens when thread's sleep() method is called";
+        array[4] = "Que5: Is it necessary that each try block must be followed by a finally block";
         array[5] = "Que6: Which one among these is not a keyword";
         array[6] = "Que7: Which one among these is not a class ";
         array[7] = "Que8: which one among these is not a function of Object class";
