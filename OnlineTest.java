@@ -148,22 +148,35 @@ class OnlineTest extends JFrame implements ActionListener
 		if(current==6)
 		{
 			l.setText(getQuestion.returnQuestion(current));
-			jb[0].setText("Swing");jb[1].setText("Actionperformed");jb[2].setText("ActionEvent");jb[3].setText("Button");
+			jb[0].setText(" undefined");
+			jb[1].setText("0");
+			jb[2].setText("null");
+			jb[3].setText("not defined");
 		}
 		if(current==7)
 		{
 			l.setText(getQuestion.returnQuestion(current));
-			jb[0].setText("toString");jb[1].setText("finalize");jb[2].setText("equals");jb[3].setText("getDocumentBase");
+			jb[0].setText("Instance variables are static variables within a class but outside any method");
+			jb[1].setText("Instance variables are variables defined inside methods, constructors or blocks");
+			jb[2].setText("Instance variables are variables within a class but outside any method.");
+			jb[3].setText("None of the above");
 		}
 		if(current==8)
 		{
 			l.setText(getQuestion.returnQuestion(current));
-			jb[0].setText("init");jb[1].setText("main");jb[2].setText("start");jb[3].setText("destroy");
+			jb[0].setText("True");
+			jb[1].setText("false");
+			jb[2].hide();
+			jb[3].hide();
 		}
-		if(current==9)
+		if(current==9
+        )
 		{
 			l.setText(getQuestion.returnQuestion(current));
-			jb[0].setText("JButton");jb[1].setText("JList");jb[2].setText("JButtonGroup");jb[3].setText("JTextArea");
+			jb[0].setText("If a subclass uses a Method that is already provided by its parent class");
+			jb[1].setText("If a subclass provides a specific implementation of a method that is already provided by its parent class");
+			jb[2].setText("Both of the above");
+			jb[3].setText("None of the above");
 		}
 
 		l.setBounds(30,40,450,20);
