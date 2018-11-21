@@ -4,13 +4,6 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-//import org.apache.tools.ant.taskdefs.optional.junit.JUnitTest;
-import org.junit.Test;
-import org.junit.jupiter.api.Assertions;
-
-import static org.junit.Assert.*;
-
-
 class OnlineTest extends JFrame implements ActionListener
 {
 	JLabel l;
@@ -148,33 +141,32 @@ class OnlineTest extends JFrame implements ActionListener
 		if(current==6)
 		{
 			l.setText(getQuestion.returnQuestion(current));
-			jb[0].setText(" undefined");
+			jb[0].setText("Undefined");
 			jb[1].setText("0");
-			jb[2].setText("null");
-			jb[3].setText("not defined");
+			jb[2].setText("Null");
+			jb[3].setText("Not defined");
 		}
 		if(current==7)
 		{
 			l.setText(getQuestion.returnQuestion(current));
-			jb[0].setText("Instance variables are static variables within a class but outside any method");
+			jb[0].setText("Instance variables are static variables within a class but outside any method.");
 			jb[1].setText("Instance variables are variables defined inside methods, constructors or blocks");
-			jb[2].setText("Instance variables are variables within a class but outside any method.");
+			jb[2].setText("Instance variables are variables within a class but outside any method");
 			jb[3].setText("None of the above");
 		}
 		if(current==8)
 		{
 			l.setText(getQuestion.returnQuestion(current));
 			jb[0].setText("True");
-			jb[1].setText("false");
+			jb[1].setText("False");
 			jb[2].hide();
 			jb[3].hide();
 		}
-		if(current==9
-        )
+		if(current==9)
 		{
 			l.setText(getQuestion.returnQuestion(current));
-			jb[0].setText("If a subclass uses a Method that is already provided by its parent class");
-			jb[1].setText("If a subclass provides a specific implementation of a method that is already provided by its parent class");
+			jb[0].setText("A - If a subclass uses a method that is already provided by its parent class, it is known as Method Overriding");
+			jb[1].setText("If a subclass provides a specific implementation of a method that is already provided by its parent class, it is known as Method Overriding.");
 			jb[2].setText("Both of the above");
 			jb[3].setText("None of the above");
 		}

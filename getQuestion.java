@@ -14,8 +14,8 @@ public class getQuestion {
         array[5] = "Que6: Which one among these is not a keyword";
         array[6] = "Que7: What is the default value of Object variable";
         array[7] = "Que8: What is instance variable";
-        array[8] = "Que9: can be constructor be made final";
-        array[9] = "Que10: What is function overriding"; //
+        array[8] = "Que9: Can be constructor be made final";
+        array[9] = "Que10: What is function overriding";
 
     }
 

@@ -1,12 +1,6 @@
-import junit.framework.AssertionFailedError;
-//import org.codehaus.groovy.transform.SourceURIASTTransformation;
-import org.junit.Test;
 import junit.framework.TestCase;
-//import org.junit.jupiter.api.Assert;
 import org.junit.jupiter.api.Assertions;
-//import org.test.Assert;
 
-//import static org.junit.Assert;
 
 public class OnlineTestTest extends TestCase {
 
