@@ -4,6 +4,8 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
+
+
 class OnlineTest extends JFrame implements ActionListener
 {
 	JLabel l;
@@ -11,7 +13,7 @@ class OnlineTest extends JFrame implements ActionListener
 	JButton b1,b2;
 	ButtonGroup bg;
 	int count=0,current=0,x=1,y=1,now=0;
-	int m[]=new int[10];	
+	int m[]=new int[12];
 	OnlineTest(String s)
 	{
 		super(s);
@@ -20,7 +22,7 @@ class OnlineTest extends JFrame implements ActionListener
 		bg=new ButtonGroup();
 		for(int i=0;i<5;i++)
 		{
-			jb[i]=new JRadioButton();	
+			jb[i]=new JRadioButton();
 			add(jb[i]);
 			bg.add(jb[i]);
 		}
@@ -50,8 +52,8 @@ class OnlineTest extends JFrame implements ActionListener
 			if(check())
 				count=count+1;
 			current++;
-			set();	
-			if(current==9)
+			set();
+			if(current==12)
 			{
 				b1.setEnabled(false);
 				b2.setText("Result");
@@ -66,26 +68,26 @@ class OnlineTest extends JFrame implements ActionListener
 			m[x]=current;
 			x++;
 			current++;
-			set();	
-			if(current==9)
+			set();
+			if(current==12)
 				b2.setText("Result");
 			setVisible(false);
 			setVisible(true);
 		}
 		for(int i=0,y=1;i<x;i++,y++)
 		{
-		if(e.getActionCommand().equals("Bookmark"+y))
-		{
-			if(check())
-				count=count+1;
-			now=current;
-			current=m[y];
-			set();
-			((JButton)e.getSource()).setEnabled(false);
-			current=now;
+			if(e.getActionCommand().equals("Bookmark"+y))
+			{
+				if(check())
+					count=count+1;
+				now=current;
+				current=m[y];
+				set();
+				((JButton)e.getSource()).setEnabled(false);
+				current=now;
+			}
 		}
-		}
-	
+
 		if(e.getActionCommand().equals("Result"))
 		{
 			if(check())
@@ -165,12 +167,35 @@ class OnlineTest extends JFrame implements ActionListener
 		if(current==9)
 		{
 			l.setText(getQuestion.returnQuestion(current));
+			jb[2].show();
+			jb[3].show();
 			jb[0].setText("A - If a subclass uses a method that is already provided by its parent class, it is known as Method Overriding");
 			jb[1].setText("If a subclass provides a specific implementation of a method that is already provided by its parent class, it is known as Method Overriding.");
 			jb[2].setText("Both of the above");
 			jb[3].setText("None of the above");
 		}
-
+		if(current==10)
+		{
+			l.setText(getQuestion.returnQuestion(current));
+			jb[0].setText("True");
+			jb[1].setText("False");
+			jb[2].setText("do not know");
+			jb[3].setText("cannot access static func");
+		}
+		if (current == 11) {
+			l.setText(getQuestion.returnQuestion(current));
+			jb[0].setText("8 bit");
+			jb[1].setText("16 bit");
+			jb[2].setText(" 32 bit");
+			jb[3].setText("64 bit");
+		}
+		if (current == 12) {
+			l.setText(getQuestion.returnQuestion(current));
+			jb[0].setText("u0000");
+			jb[1].setText("0");
+			jb[2].setText("null");
+			jb[3].setText("not defined");
+		}
 		l.setBounds(30,40,450,20);
 		for(int i=0,j=0;i<=90;i+=30,j++)
 			jb[j].setBounds(50,80+i,200,20);
@@ -197,6 +222,12 @@ class OnlineTest extends JFrame implements ActionListener
 			return(jb[1].isSelected());
 		if(current==9)
 			return(jb[1].isSelected());
+		if(current==10)
+			return(jb[0].isSelected());
+		if(current==11)
+			return(jb[1].isSelected());
+		if(current==12)
+			return(jb[0].isSelected());
 		return false;
 	}
 	public static void main(String s[])
