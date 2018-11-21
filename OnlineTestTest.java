@@ -13,17 +13,22 @@ public class OnlineTestTest extends TestCase {
         System.out.println(test.check());
 
         test.current = 4;
-        test.jb[2].setSelected(true);
+        test.jb[1].setSelected(true);
         Assertions.assertTrue(test.check());
         System.out.println(test.check());
 
         test.current = 7;
-        test.jb[3].setSelected(true);
+        test.jb[2].setSelected(true);
         Assertions.assertTrue(test.check());
         System.out.println(test.check());
 
         test.current = 9;
-        test.jb[1].setSelected(true);
+        test.jb[3].setSelected(true);
+        Assertions.assertFalse(test.check());
+        System.out.println(test.check());
+
+        test.current = 11;
+        test.jb[3].setSelected(true);
         Assertions.assertFalse(test.check());
         System.out.println(test.check());
 
